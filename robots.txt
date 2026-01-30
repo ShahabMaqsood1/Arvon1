@@ -1,0 +1,13 @@
+# ARVON Robots.txt
+
+User-agent: *
+Allow: /
+Disallow: /admin/
+Disallow: /api/
+Disallow: /uploads/
+Disallow: /includes/
+Disallow: /config.php
+Disallow: /database.sql
+
+# Sitemap
+Sitemap: https://arvon.pk/sitemap.xml

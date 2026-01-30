@@ -1,0 +1,22 @@
+# ARVON Admin Security
+# Restrict access to admin panel
+
+# Option 1: IP Whitelist (Uncomment and add your IP)
+# <RequireAny>
+#     Require ip YOUR_HOME_IP_HERE
+#     Require ip YOUR_OFFICE_IP_HERE
+# </RequireAny>
+
+# Option 2: Password Protection (Uncomment to enable)
+# AuthType Basic
+# AuthName "Admin Area - Restricted Access"
+# AuthUserFile /full/path/to/.htpasswd
+# Require valid-user
+
+# Prevent directory listing
+Options -Indexes
+
+# Protect sensitive files
+<FilesMatch "\.(log|sql|txt)$">
+    Require all denied
+</FilesMatch>

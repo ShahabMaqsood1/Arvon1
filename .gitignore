@@ -1,0 +1,25 @@
+# Ignore uploads folder (user-generated content)
+uploads/*
+!uploads/.gitkeep
+
+# Ignore config with sensitive data (user will configure on server)
+# config.php
+
+# Ignore error logs
+error_log.txt
+*.log
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore IDE files
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Keep structure folders
+!uploads/products/.gitkeep
+!uploads/categories/.gitkeep
+!uploads/gallery/.gitkeep
